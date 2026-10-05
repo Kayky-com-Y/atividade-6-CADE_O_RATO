@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://e2ifg7u5wqfo"]
+
+[ext_resource type="PackedScene" uid="uid://cp6qn086pmqax" path="res://mapa/mundo/mundo.tscn" id="2_enwsp"]
+
+[node name="Mapa" type="Node2D" unique_id=1721990387]
+
+[node name="TileMapLayer" parent="." unique_id=1606525833 instance=ExtResource("2_enwsp")]
+position = Vector2(35, 64)

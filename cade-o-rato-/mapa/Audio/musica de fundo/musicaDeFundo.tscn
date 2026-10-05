@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dbesf4ug1rnxb"]
+
+[ext_resource type="Script" uid="uid://cbwoxc8r4c20f" path="res://mapa/Audio/musica de fundo/codigo/musicaDeFundo.gd" id="1_208md"]
+[ext_resource type="AudioStream" uid="uid://3qs5cx6bwtbd" path="res://mapa/Audio/musica de fundo/arquivos/fun-of-the-fair-theo-gerard-main-version-47645-02-04.mp3" id="2_hqoij"]
+
+[node name="MusicaDeFundo" type="Node" unique_id=482171102]
+script = ExtResource("1_208md")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1664766087]
+stream = ExtResource("2_hqoij")
+autoplay = true
+parameters/looping = true

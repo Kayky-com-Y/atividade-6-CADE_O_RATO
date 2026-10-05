@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3qs5cx6bwtbd"
+path="res://.godot/imported/fun-of-the-fair-theo-gerard-main-version-47645-02-04.mp3-9eeb53527853849632ecb3c8245aaead.mp3str"
+
+[deps]
+
+source_file="res://mapa/Audio/musica de fundo/arquivos/fun-of-the-fair-theo-gerard-main-version-47645-02-04.mp3"
+dest_files=["res://.godot/imported/fun-of-the-fair-theo-gerard-main-version-47645-02-04.mp3-9eeb53527853849632ecb3c8245aaead.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

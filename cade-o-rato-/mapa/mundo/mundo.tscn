@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cp6qn086pmqax"]
+
+[ext_resource type="Texture2D" uid="uid://cwu3dai3vtbaq" path="res://mapa/mundo/imagens/chão  (3).png" id="1_1tw8a"]
+[ext_resource type="Script" uid="uid://pdm7whgvbtig" path="res://mapa/labirinto/codigo/labirinto.gd" id="2_1tw8a"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7p6hd"]
+texture = ExtResource("1_1tw8a")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_qbl6n"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_7p6hd")
+
+[node name="TileMapLayer" type="TileMapLayer" unique_id=1606525833]
+texture_filter = 1
+tile_set = SubResource("TileSet_qbl6n")
+script = ExtResource("2_1tw8a")

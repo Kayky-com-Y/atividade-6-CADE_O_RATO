@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bvp3vskb5elis"]
+
+[ext_resource type="Script" uid="uid://bs361bpbu8spb" path="res://objetos/queijo/codigo/queijo.gd" id="1_p5nh6"]
+[ext_resource type="Texture2D" uid="uid://co7nf07luhqys" path="res://objetos/queijo/imagens/queijo .png" id="1_ra8dh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0iyh0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5nh6"]
+atlas = ExtResource("1_ra8dh")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0w02x"]
+atlas = ExtResource("1_ra8dh")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jfgtr"]
+atlas = ExtResource("1_ra8dh")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1t8hx"]
+atlas = ExtResource("1_ra8dh")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0iyh0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5nh6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0w02x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jfgtr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1t8hx")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Queijo" type="Area2D" unique_id=817471115]
+script = ExtResource("1_p5nh6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=979499727]
+shape = SubResource("RectangleShape2D_0iyh0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1516309887]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_0iyh0")
+autoplay = "default"

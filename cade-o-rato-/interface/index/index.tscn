@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://dg4me7eewk24p"]
+
+[ext_resource type="Texture2D" uid="uid://84crxc4l330l" path="res://interface/index/imagens/Cadê o Rato_ Labirinto de Queijo.png" id="1_0aoe3"]
+[ext_resource type="Script" uid="uid://cp6alxighias6" path="res://interface/index/codigo/index.gd" id="1_vryh0"]
+[ext_resource type="Texture2D" uid="uid://c1lc4i3o6p1f7" path="res://interface/index/imagens/jogar rato precionado.png" id="3_vryh0"]
+[ext_resource type="Texture2D" uid="uid://d2hmjbifjwwil" path="res://interface/index/imagens/mute rato precionado.png" id="4_0aoe3"]
+[ext_resource type="Texture2D" uid="uid://ckrfqxas0weqw" path="res://interface/index/imagens/CREDITOS rato precionado .png" id="4_nnwr3"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_0uvnv"]
+diffuse_texture = ExtResource("4_0aoe3")
+texture_filter = 1
+
+[node name="Index" type="Control" unique_id=719302871]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vryh0")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=453486437]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 520.0
+offset_bottom = 292.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_0aoe3")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=279280717]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1510908035]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=849956476]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer/VBoxContainer/HBoxContainer" unique_id=1721045290]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(62, 0)
+clip_contents = true
+layout_mode = 2
+
+[node name="LinkButton" type="LinkButton" parent="HBoxContainer/VBoxContainer/HBoxContainer" unique_id=1182567512]
+layout_mode = 2
+text = "technedev.oficial"
+uri = "https://www.instagram.com/technedev.oficial/?hl=gu"
+
+[node name="VSeparator2" type="VSeparator" parent="HBoxContainer/VBoxContainer" unique_id=2083044501]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(62, 40)
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer" unique_id=945378571]
+layout_mode = 2
+size_flags_horizontal = 6
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer/VBoxContainer2" unique_id=805356391]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="HSeparator" type="HSeparator" parent="HBoxContainer/VBoxContainer2" unique_id=1043760649]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(25, 288)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/VBoxContainer2" unique_id=550114696]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Jogar" type="Button" parent="HBoxContainer/VBoxContainer2/VBoxContainer" unique_id=1434351738]
+texture_filter = 1
+layout_mode = 2
+icon = ExtResource("3_vryh0")
+flat = true
+
+[node name="Creditos" type="Button" parent="HBoxContainer/VBoxContainer2/VBoxContainer" unique_id=1264995905]
+layout_mode = 2
+icon = ExtResource("4_nnwr3")
+flat = true
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="HBoxContainer" unique_id=2049665295]
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer3" unique_id=267447380]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer3/HBoxContainer" unique_id=192045886]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+icon = SubResource("CanvasTexture_0uvnv")
+flat = true
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer/VBoxContainer3/HBoxContainer" unique_id=1016557319]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(38, 0)
+layout_mode = 2

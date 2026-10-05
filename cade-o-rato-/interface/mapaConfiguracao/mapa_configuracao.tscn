@@ -1,0 +1,97 @@
+[gd_scene format=3 uid="uid://cxkvu6wavhkoe"]
+
+[ext_resource type="Script" uid="uid://c3ensfesaq16p" path="res://interface/mapaConfiguracao/mapa_configuracao.gd" id="1_lo1ii"]
+[ext_resource type="Texture2D" uid="uid://26xkajjr2vcs" path="res://interface/index/imagens/ChatGPT Image 5 de out. de 2026, 10_00_15.png" id="2_4tyor"]
+[ext_resource type="Texture2D" uid="uid://dsldut5njnsd2" path="res://interface/index/imagens/labirinto rato.png" id="3_0uvnv"]
+[ext_resource type="Texture2D" uid="uid://c1lc4i3o6p1f7" path="res://interface/index/imagens/jogar rato precionado.png" id="3_xuqgy"]
+[ext_resource type="Texture2D" uid="uid://c07dytrkr8gst" path="res://interface/index/imagens/voltar rato.png" id="4_ana00"]
+
+[node name="MapaConfiguracao" type="Control" unique_id=1413534515]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lo1ii")
+
+[node name="ColorRect" type="TextureRect" parent="." unique_id=497041083]
+layout_mode = 0
+offset_left = -174.0
+offset_top = -2.0
+offset_right = 1362.0
+offset_bottom = 1022.0
+texture = ExtResource("2_4tyor")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1092868031]
+texture_filter = 1
+layout_mode = 0
+offset_left = 28.0
+offset_top = -169.0
+offset_right = 1143.0
+offset_bottom = 795.0
+texture = ExtResource("3_0uvnv")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=289123710]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VSeparator2" type="VSeparator" parent="HBoxContainer" unique_id=462148242]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(70, 6)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1089645908]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator2" type="HSeparator" parent="HBoxContainer/VBoxContainer" unique_id=347555752]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(54, 112)
+layout_mode = 2
+
+[node name="TextEdit" type="TextEdit" parent="HBoxContainer/VBoxContainer" unique_id=1540160793]
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "Cole seu labirinto aqui:
+
+ex:
+em01000100001000100001000
+1101010101101010101101010
+0000010001000010001000010
+0111111101111011111011110
+0100000100001000001010000
+0101110111101111101010111
+0001000000100000100010000
+1101011110111110111011110
+0000010010000010001000010
+0001000001000001000100000
+"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=1084155166]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Jogar" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer" unique_id=1246661486]
+oversampling_with_scale = 2
+texture_filter = 2
+texture_repeat = 2
+layout_mode = 2
+size_flags_horizontal = 4
+icon = ExtResource("3_xuqgy")
+flat = true
+
+[node name="CriarLabirinto" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer" unique_id=1135881742]
+layout_mode = 2
+size_flags_horizontal = 4
+icon = ExtResource("4_ana00")
+flat = true
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer" unique_id=1603470278]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(70, 6)
+layout_mode = 2
